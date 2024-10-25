@@ -9,30 +9,30 @@
 </head>
 
 <body>
-  <header class="header header__wrapper">
+  <header class="header">
     <div class="header__inner">
       <a class="logo-img" href="#" aria-label="Переход на главную страницу"></a>
       <a class="logo-text" href="#" aria-label="Переход на главную страницу"></a>
-      <button class="nav-menu nav__menu" type="button" aria-label="Открыть меню"></button>
+      <button class="nav-menu" type="button" aria-label="Открыть меню"></button>
       <nav class="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="./index.html">Главная</a>
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link--current" href="#">Главная</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--current" href="#">Каталог продукции</a>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="./catalog.html">Каталог продукции</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Подбор программы</a>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="main__catalog">
+  <main class="catalog">
     <section class="catalog">
-      <h2 class="catalog__title">Каталог продукции</h2>
-      <ul class="catalog catalog__list">
+      <h1 class="catalog__title">Каталог продукции</h1>
+      <ul class="catalog">
         <li class="catalog-card catalog__card">
           <div class="catalog-card__img"></div>
           <div class="catalog-card__description">
@@ -160,7 +160,7 @@
     </section>
   </main>
 
-  <footer class="footer footer__wrapper">
+  <footer class="footer">
     <article class="cooperation">
       <p class="cooperation__text"></p>
       <address class="cooperation__address"></address>
@@ -169,9 +169,9 @@
     <div class="footer__elements">
       <a class="footer-logo" href="#" aria-label="Логотип компании"></a>
       <ul class="social-links">
-        <li class="social__item"><a class="social-link social-link--vk" href="#" aria-label="Переход на страницу вконтакте."></a></li>
-        <li class="social__item"><a class="social-link social-link-youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
-        <li class="social__item"><a class="social-link social-link-telegram" href="#" aria-label="Переход на страницу в телеграм."></a></li>
+        <li class="social-links__item"><a class="social-link social-link--vk" href="#" aria-label="Переход на страницу в контакте."></a></li>
+        <li class="social-links__item"><a class="social-link social-link-youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
+        <li class="social-links__item"><a class="social-link social-link-telegram" href="#" aria-label="Переход на страницу в телеграм."></a></li>
       </ul>
       <a class="footer-link" href="#">
         <span>HTML Academy.</span>
