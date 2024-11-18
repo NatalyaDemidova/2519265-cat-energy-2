@@ -11,6 +11,9 @@
 }
 
 .hero__content {
-  background-image: url("//source/images/hero-mobile@2x.png");
+  background-image: url("../../images/index-background-mobile@2x.png");
+  background-blend-mode: overlay;
   background-color: rgba(104, 183, 56, 0.85);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
