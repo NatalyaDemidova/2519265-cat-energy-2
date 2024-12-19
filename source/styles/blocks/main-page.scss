@@ -7,6 +7,10 @@
 }
 
 @media screen and (min-width: $desktop-width) {
+  .main__page {
+    padding-left: 8px;
+  }
+
   .main__page--bg {
     position: relative;
     margin-right: -110px;

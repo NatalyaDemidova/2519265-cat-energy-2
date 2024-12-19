@@ -35,7 +35,7 @@
 @media screen and (min-width: $tablet-width) {
   .example__wrapper {
     margin: 0 -29px;
-    padding: 0 13px 45px 29px;
+    padding: 0 13px 0 29px;
     background-color: transparent;
   }
 
@@ -89,6 +89,7 @@
   .example__description {
     max-width: 40%;
     padding-top: 26px;
+    margin-bottom: 25px;
   }
 
   .example-title {

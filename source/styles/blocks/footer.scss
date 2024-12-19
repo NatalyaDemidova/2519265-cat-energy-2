@@ -65,10 +65,10 @@
 @media screen and (min-width: $tablet-width) {
   .footer__elements {
     flex-flow: row wrap;
-    align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
     margin: 0 -29px;
-    padding: 43px 29px;
+    padding: 44px 29px;
   }
 
   .footer__element {
@@ -84,27 +84,30 @@
 
   .footer-link {
     padding-right: 33px;
+    padding-top: 14px;
 
     &::after {
       right: -16px;
+      top: -6px;
     }
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .footer__container {
+    position: relative;
     margin: 0 -110px;
   }
 
   .footer__elements {
-    padding: 54px 84px 45px 150px;
+    padding: 54px 147px 45px 150px;
   }
 
   .footer-link {
-    padding: 0 33px 0 0;
+    padding: 20px 33px 0 0;
 
     &::after {
-      top: -6px;
+      top: 13px;
     }
   }
 }

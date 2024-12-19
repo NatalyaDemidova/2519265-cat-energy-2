@@ -1,26 +1,29 @@
 .header__inner {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding-top: 13px;
   padding-bottom: 2px;
-  letter-spacing: -1px;
+  // letter-spacing: -1px;
 }
 
 .header__inner--container {
   padding-bottom: 10px;
 }
 
-.button--menu {
+.button__menu {
   position: relative;
   width: 25px;
   height: 25px;
+  // margin-left: 22px;
+  margin-left: auto;
   padding: 0;
   background-color: $light-color;
 
   & span {
     position: absolute;
-    top: 35%;
     display: block;
     width: 25px;
     height: 2px;
@@ -30,7 +33,6 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
     display: block;
     width: 25px;
     height: 2px;
@@ -40,7 +42,6 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 7px;
     display: block;
     width: 25px;
     height: 2px;
@@ -48,14 +49,49 @@
   }
 }
 
+.button__menu--closed span {
+  top: 35%;
+}
+
+.button__menu--closed::before {
+  top: 0;
+}
+
+.button__menu--closed::after {
+  top: 17px;
+}
+
+.button__menu--open span {
+  display: none;
+}
+
+.button__menu--open::before {
+  transform: rotate(45deg);
+  top: 10px;
+  left: 4px;
+}
+
+.button__menu--open::after {
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 4px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .button__menu--nojs {
+    display: none;
+  }
+}
+
 @media screen and (min-width: $tablet-width) {
   .header__inner {
     padding-top: 25px;
     padding-bottom: 25px;
+    align-items: flex-start;
     justify-content: flex-start;
   }
 
-  .button--menu {
+  .button__menu {
     display: none;
   }
 }
@@ -63,8 +99,7 @@
 @media screen and (min-width: $desktop-width) {
   .header__inner {
     position: relative;
-    padding-top: 55px;
-    padding-bottom: 25px;
+    padding: 55px 26px 25px 0;
     letter-spacing: 0;
   }
 }

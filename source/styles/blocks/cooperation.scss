@@ -62,3 +62,22 @@
     line-height: 20px;
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .cooperation {
+    position: absolute;
+    top: 95px;
+    left: 118px;
+    max-width: 565px;
+  }
+
+  .cooperation__wrapper {
+    gap: 90px;
+    padding: 62px 80px 60px;
+  }
+
+  .cooperation__address {
+    text-align: left;
+    align-items: flex-start;
+  }
+}

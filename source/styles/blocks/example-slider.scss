@@ -102,4 +102,8 @@
   .example-slider__container::before {
     background-color: inherit;
   }
+
+  .example-slider__button {
+    max-height: 80%;
+  }
 }
