@@ -2,16 +2,16 @@
   flex-grow: 1;
 }
 
-.main__page {
+.main-page {
   min-width: 280px;
 }
 
 @media screen and (min-width: $desktop-width) {
-  .main__page {
+  .main-page {
     padding-left: 8px;
   }
 
-  .main__page--bg {
+  .main-page__bg-container {
     position: relative;
     margin-right: -110px;
     padding-right: 96px;

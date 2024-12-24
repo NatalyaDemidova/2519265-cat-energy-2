@@ -10,15 +10,13 @@
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <main class="main-page">
-    <div class="main__page container">
-      <div class="main__page--bg">
+    <div class="main-page container">
+      <div class="main-page__bg-container">
         <header class="header">
-          <!-- <div class=" container"> -->
           <div class="header__inner">
             <a class="logo logo-img" href="#" aria-label="Переход на главную страницу">
               <picture>
@@ -30,10 +28,9 @@
             <a class="logo logo-text" href="#" aria-label="Переход на главную страницу">
               <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
             </a>
-            <button class="button button__menu button__menu--closed button__menu--nojs" type="button" aria-label="Открыть меню">
+            <button class="button button-menu button-menu--closed button-menu--nojs" type="button" aria-label="Открыть меню">
               <span></span>
             </button>
-            <!-- <button class="button button__menu button__menu--open button__menu--nojs" type="button" aria-label="Открыть меню"> -->
             <nav class="nav-menu nav-menu--closed nav-menu--nojs">
               <ul class="nav-menu__list list-reset">
                 <li class="nav-menu__item">
@@ -47,7 +44,6 @@
                 </li>
               </ul>
             </nav>
-            <!-- </div> -->
           </div>
         </header>
         <section class="hero">
@@ -126,15 +122,15 @@
               обычный корм на&nbsp;Cat Energy Slim. Отличный результат
               без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих
               привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.</p>
-            <div class="resuits__block">
+            <div class="resuits-block">
               <ul class="results-list list-reset">
-                <li class="result__item">
+                <li class="results-list__item">
                   <span class="result">5&nbsp;КГ</span>
-                  <span class="result__text">снижение веса</span>
+                  <span class="results-list__text">снижение веса</span>
                 </li>
-                <li class="result__item">
+                <li class="results-list__item">
                   <span class="result">60&nbsp;ДНЕЙ</span>
-                  <span class="result__text">затрачено времени</span>
+                  <span class="results-list__text">затрачено времени</span>
                 </li>
               </ul>
               <p class="example__costs">Затраты на питание: <span>15&nbsp;000&nbsp;РУБ.</span></p>
@@ -155,9 +151,7 @@
             </address>
           </div>
         </article>
-        <!-- <div class="map__wrapper" name="map"> -->
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757454!2d30.314833977322365!3d59.968268659713615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1734599125073!5m2!1sru!2sru" min-width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!-- </div> -->
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757454!2d30.314833977322365!3d59.968268659713615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1734599125073!5m2!1sru!2sru" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="footer__elements">
           <a class="footer__element logo footer__logo" href="#" aria-label="Логотип компании">
             <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
@@ -172,7 +166,7 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/index.js"></script>
+  <script defer src="scripts/index.js"></script>
 </body>
 
 </html>

@@ -109,26 +109,6 @@
       color: $basic-gray;
       z-index: -1;
     }
-
-    // &.advantage-item--leaf::after {
-
-    //   content: counter(item);
-    // }
-
-    // &.advantage-item--bubbles::after {
-    //   // counter-increment: item 1;
-    //   content: counter(item);
-    // }
-
-    // &.advantage-item--tableware::after {
-    //   // counter-increment: item 1;
-    //   content: counter(item);
-    // }
-
-    // &.advantage-item--time::after {
-    //   // counter-increment: item 1;
-    //   content: counter(item);
-    // }
   }
 
   .advantage-item__text {
