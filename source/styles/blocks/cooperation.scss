@@ -68,9 +68,10 @@
 @media screen and (min-width: $desktop-width) {
   .cooperation {
     position: absolute;
-    top: 95px;
+    top: 12%;
     left: 110px;
     max-width: 565px;
+    z-index: 5;
   }
 
   .cooperation--dark {

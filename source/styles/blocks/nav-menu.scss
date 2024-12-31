@@ -108,13 +108,10 @@
   .nav-menu__link {
     display: block;
     padding: 8px 0 10px;
-  }
-
-  .main-page__bg-container .nav-menu__link {
     color: $light-color;
   }
 
-  .main-page__bg-container .nav-menu__link--current {
+  .nav-menu__link--current {
     border-bottom: 2px solid $light-color;
   }
 }

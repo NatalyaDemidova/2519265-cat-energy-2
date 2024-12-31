@@ -70,11 +70,8 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .example__wrapper {
+  .example {
     position: relative;
-    flex-flow: row-reverse wrap;
-    justify-content: space-between;
-    gap: 30px;
 
     &::before {
       content: "";
@@ -83,7 +80,17 @@
       inset: 164px -110px 0;
       background-color: #e2e2e2;
       z-index: -1;
+      top: 164px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
     }
+  }
+
+  .example__wrapper {
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    gap: 30px;
   }
 
   .example__description {

@@ -34,18 +34,40 @@
     min-height: 300px;
     height: 100%;
     z-index: -1;
-    background-image: url("../../images/index-background-mobile@2x.png");
-    background-blend-mode: overlay;
-    background-color: rgba(104, 183, 56, 0.85);
+    background-image: url("../../images/index-background-mobile@2x.png"), linear-gradient(to left, #3f3f43, #505156);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 300px;
+    background-size: contain, 100% 300px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin-left: -20px;
+    margin-right: -20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 300px;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(104, 183, 56, 0.85);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
 }
 
 .hero__button {
   padding: 10px;
   min-width: 100%;
   font-family: $primary-font;
+  border: none;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -61,7 +83,8 @@
     text-align: left;
   }
 
-  .hero__content::before {
+  .hero__content::before,
+  .hero__content::after {
     background-image: none;
     background-color: transparent;
   }
@@ -99,8 +122,36 @@
 
 @media screen and (min-width: $desktop-width) {
   .hero {
-    padding-top: 79px;
+    padding: 79px 89px 36px;
     min-height: 549px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 50.5%;
+      right: 0;
+      height: 118%;
+      width: 49.5%;
+      z-index: -2;
+      background: url("../../images/index-background-desktop @2x.png"), #3f3f43;
+      background-position: 0 -40px, center;
+      background-repeat: no-repeat;
+      background-size: auto, cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 50.5%;
+      right: 0;
+      height: 118%;
+      width: 49.5%;
+      z-index: -2;
+      background-color: rgba(104, 183, 56, 0.85);
+    }
   }
 
   .hero__wrapper {
@@ -109,6 +160,14 @@
 
   .hero__content {
     width: 50%;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .hero__button {
@@ -119,6 +178,6 @@
     position: absolute;
     z-index: -1;
     bottom: 9%;
-    right: 18%;
+    right: 22%;
   }
 }
