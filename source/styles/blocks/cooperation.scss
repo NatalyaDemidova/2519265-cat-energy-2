@@ -5,7 +5,8 @@
 .cooperation__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 26px 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
   gap: 3px;
 }
 
@@ -34,14 +35,12 @@
 
 @media screen and (min-width: $tablet-width) {
   .cooperation--dark {
-    margin: 0 -29px;
-    padding: 0 29px;
     background-color: $basic-gray;
   }
 
   .cooperation__wrapper {
     gap: 310px;
-    padding: 62px 25px 60px 41px;
+    padding: 62px 53px 60px 70px;
   }
 
   .cooperation__title {
@@ -67,21 +66,23 @@
 
 @media screen and (min-width: $desktop-width) {
   .cooperation {
-    position: absolute;
-    top: 12%;
-    left: 110px;
-    max-width: 565px;
-    z-index: 5;
-  }
-
-  .cooperation--dark {
-    padding: 0;
-    margin: 0;
+    position: relative;
+    top: 97px;
   }
 
   .cooperation__wrapper {
+    position: absolute;
+    top: 18%;
+    left: 110px;
+    max-width: 565px;
+    z-index: 5;
     gap: 90px;
-    padding: 62px 80px 60px;
+    padding: 62px 80px 56px;
+    background-color: $light-color;
+  }
+
+  .cooperation__wrapper--dark {
+    background-color: $basic-gray;
   }
 
   .cooperation__address {

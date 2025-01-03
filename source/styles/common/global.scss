@@ -38,12 +38,14 @@ body {
 
 @media screen and (min-width: $tablet-width) {
   .container {
-    padding: 0 29px;
+    padding-left: 29px;
+    padding-right: 10px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .container {
-    padding: 0 110px;
+    padding-left: 110px;
+    padding-right: 90px;
   }
 }

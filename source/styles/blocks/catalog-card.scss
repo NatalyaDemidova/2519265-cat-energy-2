@@ -30,7 +30,8 @@
   width: 30px;
   height: 2px;
   top: 19%;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #d3d3d3;
 }
 
@@ -41,6 +42,7 @@
   height: 30px;
   top: 12%;
   left: 50%;
+  transform: translateX(-50%);
   background-color: #d3d3d3;
 }
 
@@ -103,7 +105,7 @@
       "image  image"
       "descr  descr"
       "button button";
-    padding: 57px 40px 37px;
+    padding: 54px 40px 40px;
     row-gap: 20px;
 
     &::before {
@@ -136,22 +138,16 @@
 
   .catalog-card__img-all {
     &::before {
-      position: absolute;
-      content: "";
       width: 62px;
       height: 2px;
       top: 38%;
-      left: 41%;
       background-color: #d3d3d3;
     }
 
     &::after {
-      position: absolute;
-      content: "";
       width: 2px;
       height: 62px;
       top: 32%;
-      left: 50%;
       background-color: #d3d3d3;
     }
   }
@@ -232,14 +228,5 @@
 
   .catalog__card--all .catalog-card__button {
     align-self: center;
-  }
-
-  .catalog-card__img-all::after {
-    transform: translateX(-50%);
-  }
-
-  .catalog-card__img-all::before {
-    left: 50%;
-    transform: translateX(-50%);
   }
 }

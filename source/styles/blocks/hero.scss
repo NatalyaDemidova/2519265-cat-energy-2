@@ -1,5 +1,5 @@
 .hero__wrapper {
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 }
 
 .hero__title {
@@ -85,8 +85,7 @@
 
   .hero__content::before,
   .hero__content::after {
-    background-image: none;
-    background-color: transparent;
+    display: none;
   }
 
   .hero__title {
@@ -110,11 +109,11 @@
     position: absolute;
     z-index: -1;
     bottom: 0;
-    right: -9px;
+    right: 12px;
   }
 
   .hero__button {
-    min-width: 48%;
+    min-width: 46%;
     padding: 17px;
     font-size: 20px;
   }
@@ -178,6 +177,6 @@
     position: absolute;
     z-index: -1;
     bottom: 9%;
-    left: 15%;
+    left: 18%;
   }
 }

@@ -3,21 +3,11 @@
   width: 100%;
   min-height: 320px;
   height: 362px;
-  margin: 0 -20px;
   border: 0;
 }
 
 @media screen and (min-width: $tablet-width) {
   .map {
     height: 400px;
-    margin: 0 -29px;
-  }
-}
-
-@media screen and (min-width: $desktop-width) {
-  .map {
-    margin: 0;
-    position: absolute;
-    left: 0;
   }
 }

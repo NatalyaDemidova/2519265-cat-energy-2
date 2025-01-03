@@ -17,8 +17,8 @@
     <div class="header__inner container">
       <a class="logo logo-img" href="#" aria-label="Переход на главную страницу">
         <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <source media="(min-width: 1440px)" srcset="images/logo-pic-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg" width="60" height="50" type="image/svg+xml">
           <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
       </a>
@@ -45,9 +45,9 @@
   </header>
   <main class="catalog">
     <div class="catalog-page">
-      <div class="catalog__page container">
+      <div class="catalog__page">
         <section class="catalog">
-          <div class="catalog__wrapper">
+          <div class="catalog__wrapper container">
             <h1 class="title catalog__title">Каталог продукции</h1>
             <ul class="catalog-list list-reset">
               <li class="catalog-card catalog__card">
@@ -173,50 +173,54 @@
             </ul>
           </div>
         </section>
-        <section class="addition">
-          <h2 class="addition__title">Дополнительные товары</h2>
-          <div class="addition__wrapper">
-            <ul class="addition__list list-reset">
-              <li class="addition__item">
-                <span class="addition__caption">Сахарозаменитель</span>
-                <span class="addition__text">1&nbsp;упаковка (100&nbsp;г)</span>
-                <span class="addition__text addition__text--price">200&nbsp;₽</span>
-                <button class="button addition__button button--primary" type="button">Заказать</button>
-              </li>
-              <li class="addition__item">
-                <span class="addition__caption">Питьевая вода</span>
-                <span class="addition__text">5&nbsp;литров</span>
-                <span class="addition__text addition__text--price">50&nbsp;₽</span>
-                <button class="button addition__button button--primary" type="button">Заказать</button>
-              </li>
-              <li class="addition__item">
-                <span class="addition__caption">Молоко</span>
-                <span class="addition__text">1&nbsp;литр</span>
-                <span class="addition__text addition__text--price">100&nbsp;₽</span>
-                <button class="button addition__button button--primary" type="button">Заказать</button>
-              </li>
-              <li class="addition__item">
-                <span class="addition__caption">Витамины</span>
-                <span class="addition__text">1&nbsp;упаковка (30&nbsp;г)</span>
-                <span class="addition__text addition__text--price">300&nbsp;₽</span>
-                <button class="button addition__button button--primary" type="button">Заказать</button>
-              </li>
-            </ul>
-            <div class="addition__card addition-card">
-              <p>Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
+        <section class="addition addition--decor">
+          <div class="container">
+            <h2 class="addition__title">Дополнительные товары</h2>
+            <div class="addition__wrapper">
+              <ul class="addition__list list-reset">
+                <li class="addition__item">
+                  <span class="addition__caption">Сахарозаменитель</span>
+                  <span class="addition__text">1&nbsp;упаковка (100&nbsp;г)</span>
+                  <span class="addition__text addition__text--price">200&nbsp;₽</span>
+                  <button class="button addition__button button--primary" type="button">Заказать</button>
+                </li>
+                <li class="addition__item">
+                  <span class="addition__caption">Питьевая вода</span>
+                  <span class="addition__text">5&nbsp;литров</span>
+                  <span class="addition__text addition__text--price">50&nbsp;₽</span>
+                  <button class="button addition__button button--primary" type="button">Заказать</button>
+                </li>
+                <li class="addition__item">
+                  <span class="addition__caption">Молоко</span>
+                  <span class="addition__text">1&nbsp;литр</span>
+                  <span class="addition__text addition__text--price">100&nbsp;₽</span>
+                  <button class="button addition__button button--primary" type="button">Заказать</button>
+                </li>
+                <li class="addition__item">
+                  <span class="addition__caption">Витамины</span>
+                  <span class="addition__text">1&nbsp;упаковка (30&nbsp;г)</span>
+                  <span class="addition__text addition__text--price">300&nbsp;₽</span>
+                  <button class="button addition__button button--primary" type="button">Заказать</button>
+                </li>
+              </ul>
+              <div class="addition__card addition-card">
+                <p>Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
+              </div>
             </div>
           </div>
         </section>
-        <section class="subscribe">
-          <h2 class="subscribe__title">Акции и&nbsp;новинки</h2>
-          <div class="subscribe__wrapper">
-            <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-            <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
-              <label>
-                <input class="subscribe__input" type="email" name="email" value="kuklachev@gmail.com" placeholder="Введите E-mail" required>
-              </label>
-              <button class="button subscribe__button button--primary" type="submit">Подписаться</button>
-            </form>
+        <section class="subscribe subscribe--decor">
+          <div class="container">
+            <h2 class="subscribe__title">Акции и&nbsp;новинки</h2>
+            <div class="subscribe__wrapper">
+              <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+              <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
+                <label>
+                  <input class="subscribe__input" type="email" name="email" value="kuklachev@gmail.com" placeholder="Введите E-mail" required>
+                </label>
+                <button class="button subscribe__button button--primary" type="submit">Подписаться</button>
+              </form>
+            </div>
           </div>
         </section>
       </div>
@@ -224,18 +228,17 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <!-- <div class="footer__container"> -->
-      <article class="cooperation cooperation--dark">
-        <div class="cooperation__wrapper">
-          <h4 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h4>
-          <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
-            <span>Санкт-Петербург</span>
-          </address>
-        </div>
-      </article>
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757454!2d30.314833977322365!3d59.968268659713615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1734599125073!5m2!1sru!2sru" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="footer__elements">
+    <article class="cooperation cooperation--dark container">
+      <div class="cooperation__wrapper cooperation__wrapper--dark">
+        <h4 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h4>
+        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
+          <span>Санкт-Петербург</span>
+        </address>
+      </div>
+    </article>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757454!2d30.314833977322365!3d59.968268659713615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1734599125073!5m2!1sru!2sru" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="footer__elements">
+      <div class="footer__wrapper footer__wrapper--catalog container">
         <a class="footer__element logo footer__logo" href="#" aria-label="Логотип компании">
           <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
         </a>
@@ -246,7 +249,6 @@
         </ul>
         <a class="footer__element footer-link" href="#">HTML Academy</a>
       </div>
-      <!-- </div> -->
     </div>
   </footer>
   <script src="scripts/index.js"></script>

@@ -34,7 +34,7 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-  .resuits__block {
+  .resuits-block {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 162px;
@@ -56,10 +56,9 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .resuits__block {
+  .resuits-block {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 63px;
+    gap: 62px;
   }
 
   .results-list__text {
