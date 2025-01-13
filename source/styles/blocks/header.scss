@@ -106,18 +106,6 @@
       background-color: #3f3f43;
       z-index: -2;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50.5%;
-      right: 0;
-      width: 49.5%;
-      height: 100%;
-      background-color: rgba(104, 183, 56, 0.85);
-      z-index: -2;
-    }
   }
 
   .header__inner {
