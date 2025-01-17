@@ -125,16 +125,30 @@
     min-height: 549px;
     position: relative;
 
+    &::after {
+      content: "";
+      position: absolute;
+      width: 49.5%;
+      top: -400px;
+      right: 0;
+      bottom: 0;
+      z-index: -3;
+      background-color: #3c3b3e;
+      background-image: url("../../images/index-background-desktop @2x.png");
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+    }
+
     &::before {
       content: "";
       position: absolute;
-      width: 50%;
+      width: 49.5%;
       top: -400px;
       right: 0;
       bottom: 0;
       z-index: -2;
-      background-color: #63a63b;
-      background-image: url("../../images/back-desktop@2x.jpg");
+      background-color: rgba(104, 183, 56, 0.85);
+      // background-image: url("../../images/back-desktop@2x.jpg");
       background-repeat: no-repeat;
       background-position: 0 100%;
     }
